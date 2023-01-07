@@ -1,3 +1,5 @@
+package task_3;
+
 public class БазаДаних {
     public String отриматиДаніКористувача() {
         return "hello";
