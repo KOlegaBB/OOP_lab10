@@ -14,6 +14,8 @@ public class Database {
             Connection conn = DriverManager.getConnection(dbURL);
             try {
                 String sql = "create table user (name varchar(20), email varchar(20), age varchar(20))";
+                Statement statement = conn.createStatement();
+                statement.executeUpdate(sql);
             } catch (Exception ex) {
             }
         } catch (Exception ex) {
